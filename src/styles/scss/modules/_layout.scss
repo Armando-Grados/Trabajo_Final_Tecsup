@@ -1,0 +1,218 @@
+.section-body{
+  //padding-top: var(--padding-section);
+  padding-top: 100px;
+  padding-bottom: var(--padding-section);
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin:  0 auto;
+
+  &__title{
+      text-align: center;
+      color: #000
+  }
+  
+
+}
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: var(--padding-container);
+  background-clip: border-box;
+
+  &--headed {
+    @include d-flex-fd-ai-fc-g(initial, center, space-between, initial);
+
+    @include desktop {
+      gap: 1.5rem;
+    }
+  }
+
+  &--hero {
+    @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
+    z-index: 5;
+  }
+  &-galeria{
+    display: flex;
+    max-width: var(max-width-container-section);
+    margin: 0 auto;
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
+
+    &--elements {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: var(--padding-section);
+      }
+}
+}
+.contenedor{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url('/assets/slider/la-galaxy-city-of-dreams-kit_600x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+   cursor: pointer;
+}
+
+.contenedor-2{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url('/assets/slider/nike-snood-warrior-winter-gear_600x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+   cursor: pointer;
+}
+
+.contenedor-4{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url('/assets/slider/lafc-2022-jersey_600x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor-3{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url('/assets/slider/charly-atlas-conmemorativa_600x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor .capa{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-2 .capa{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-3 .capa{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-4 .capa{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor:hover{
+  .capa{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }  
+}
+
+.contenedor-2:hover{
+  .capa{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }  
+}
+
+.contenedor-3:hover{
+  .capa{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }  
+}
+
+.contenedor-4:hover{
+  .capa{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }  
+}
+.capa-title{
+  color: azure;
+}
+// .img{
+//   width: 355px;
+//   //height: 50px;
+// }
+
+@media (max-width: 768px) {
+  .img{
+      width: 200px;        
+  }  
+
+  .contenedor .capa{
+      display: flex;
+  }
+
+  .contenedor-2 .capa{
+      display: flex;
+  }
+
+  .contenedor-3 .capa{
+      display: flex;
+  }
+
+  .contenedor-4 .capa{
+      display: flex;
+  }
+
+  .elements--cards{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

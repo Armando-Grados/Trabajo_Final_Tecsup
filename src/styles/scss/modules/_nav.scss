@@ -1,0 +1,48 @@
+.nav {
+  --bg-color-menu-icon-midline: var(--primary-theme-color);
+  --bg-color-menu-icon-line: #000;
+  --fill-color-logo: #000;
+  --displacement-menu-icon-line: 0;
+  --rotate-menu-icon-firstline: rotate(0deg);
+  --rotate-menu-icon-lastline: rotate(0deg);
+  --heigth-menu-hamburger: 0;
+  --top-menu-hamburger: 64px;
+  padding: 0.625rem 0;
+
+  &--menu-open {
+    --bg-color-menu-icon-midline: transparent;
+    --bg-color-menu-icon-line: #fff;
+    --fill-color-logo: #fff;
+    --displacement-menu-icon-line: 9;
+    --rotate-menu-icon-firstline: rotate(45deg);
+    --rotate-menu-icon-lastline: rotate(-45deg);
+    --heigth-menu-hamburger: 100%;
+    --top-menu-hamburger: 0;
+  }
+
+  &__link-logo-container {
+    position: relative;
+  }
+
+  &__link-logo {
+    display: block;
+    margin: 0;
+    height: 55px;
+    width: 200px;
+
+    @include desktop {
+      height: 55px;
+      width: 250px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+
+    &-wolf {
+      fill: var(--fill-color-logo);
+      transition: fill 0.5s;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.testimonial_Box {
+  background-image: url(../../../assets/img/bg-slider.jpg);
+  padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgb(162, 213, 229);
+  color: black;
+  height: 25rem;
+}
+
+.testimonial_Box .quote {
+  margin-top: 2rem;
+  width: 35px;
+  color: white;
+  position: relative;
+  left: 85%;
+}
+
+.testimonial_Box .star {
+  width: 40px;
+  display: inline-flex;
+  margin: auto 0.2rem;
+}
+
+.testimonial_Content {
+  margin-top: -2rem;
+}
+
+.testimonial_Box .person {
+  width: 3rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  color: skyblue;
+}
+
+h3 span {
+  color: black;
+}

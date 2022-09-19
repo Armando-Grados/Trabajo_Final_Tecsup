@@ -1,0 +1,34 @@
+.card {
+  @include d-flex-fd-ai-fc-g(row, center, center, 0);
+  flex-direction: column;
+
+  &--hero {
+    gap: 1.5rem;
+    max-width: 448px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    @include desktop {
+
+      font-size: 2rem;
+    }
+    &--hero{
+      font-size: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+}
