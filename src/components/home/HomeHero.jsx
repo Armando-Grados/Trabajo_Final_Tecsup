@@ -1,4 +1,4 @@
-const Hero = () => {
+const HomeHero = () => {
   return (
     <article className="hero" id="iHero">
       <div className="container container--hero">
@@ -12,4 +12,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default HomeHero;

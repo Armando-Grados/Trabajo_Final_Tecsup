@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 
-const ClothingSeason = () => {
+const HomeStyleClothing = () => {
   return (
     <section className="section-body">
       <div className="container-galeria container-galeria--elements">
@@ -66,4 +66,4 @@ const ClothingSeason = () => {
   );
 }
 
-export default ClothingSeason;
+export default HomeStyleClothing;

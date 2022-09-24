@@ -50,16 +50,16 @@ const Header = () => {
             }}
           >
             <li>
-              <a href="#iSkills" className="menu__link">SKILL</a>
+              <a href="#iSkills" className="menu__link">INICIO</a>
             </li>
             <li>
-              <a href="#iExperience" className="menu__link">EXPERIENCIA</a>
+              <a href="#iExperience" className="menu__link">SEASON</a>
             </li>
             <li>
-              <a href="/" className="menu__link">PROYECTOS</a>
+              <a href="/" className="menu__link">ULTIMOS CALZADOS</a>
             </li>
             <li>
-              <a href="#iContact" className="menu__link">CONTACTO</a>
+              <a href="#iContact" className="menu__link">RESEÑAS</a>
             </li>
           </ul>
         </div>

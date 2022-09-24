@@ -1,5 +1,5 @@
 
-const Sneakers = () => {
+const HomeLastestSneakers = () => {
   const code = () => {
     const cardPrincipal = document.getElementById("card_principal");
     const cardPrincipal2 = document.getElementById("card_principal-2");
@@ -147,4 +147,4 @@ const Sneakers = () => {
   );
 };
 
-export default Sneakers;
+export default HomeLastestSneakers;

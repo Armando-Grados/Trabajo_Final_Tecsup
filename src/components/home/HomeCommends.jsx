@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import { EffectCoverflow } from 'swiper';
-import star from '../assets/svg/star.svg';
-const Commends = () => {
+import star from '../../assets/svg/star.svg';
+const HomeCommends = () => {
   return (
     <section>
       <Swiper
@@ -276,4 +276,4 @@ const Commends = () => {
   );
 };
 
-export default Commends;
+export default HomeCommends;

@@ -1,21 +1,17 @@
 import './App.css';
-import Header from './components/section/Header';
-import Hero from './pages/Hero';
-import Commends from './pages/Commends';
-import ClothingSeason from './pages/ClothingSeason';
-import Sneakers from './pages/Sneakers';
+import { Route, Routes } from 'react-router-dom';
+import PrimaryLayout from './layouts/PrimaryLayout';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <ClothingSeason/>
-        <Sneakers/>
-        <Commends />
-      </main>
-    </>
+    <Routes>
+      <Route path='/' element={<PrimaryLayout />}>
+        <Route index element={<HomePage />} />
+        <Route></Route>
+        <Route></Route>
+      </Route>
+    </Routes>
   );
 }
 
