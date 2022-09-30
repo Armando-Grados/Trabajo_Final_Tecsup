@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/welcome/hero/Hero";
+import Service from "../components/welcome/service/Service";
 import Testomonial from "../components/welcome/testimonial/Testimonial";
 
 const WelcomePge = () => {
@@ -7,6 +8,7 @@ const WelcomePge = () => {
     <>
       <Hero />
       <Testomonial />
+      <Service />
     </>
   );
 };
