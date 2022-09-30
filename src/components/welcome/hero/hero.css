@@ -67,3 +67,6 @@
     height: 70vh;
   }
 }
+.fp-watermark {
+  display: none;
+}
