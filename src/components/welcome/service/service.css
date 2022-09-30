@@ -12,7 +12,6 @@
 
 .welcome__service {
   height: 96vh;
-  background: url("../../../assets/welcome/services-4.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -21,6 +20,18 @@
   align-items: normal;
   /* animation: zoom-in-zoom-out 20s infinite !important; */
   margin-top: 4rem;
+}
+.first {
+  background: url("../../../assets/welcome/services-1.webp");
+}
+.second {
+  background: url("../../../assets/welcome/services-2.webp");
+}
+.third {
+  background: url("../../../assets/welcome/services-3.webp");
+}
+.fourth {
+  background: url("../../../assets/welcome/services-4.webp");
 }
 .welcome__service-item .box {
   width: 100%;
