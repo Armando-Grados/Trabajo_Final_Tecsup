@@ -30,7 +30,7 @@ const Service = () => {
 
   return (
     <>
-      <div className="welcome__service first">
+      <div className="welcome__service first zoom">
         <div className=" height__100">
           <div className="row height__100">
             <Fade right>
@@ -39,7 +39,7 @@ const Service = () => {
                   className="box box__item-1 height__100"
                   onMouseOver={mouseEnteredOne}
                 >
-                  <div className="content">
+                  <div className="content contetnt__an">
                     <h3 className="heading">Residential Roofing</h3>
                     <p className="pera">
                       Lorem Ipsum is simply dummy text of the printing and

@@ -4,9 +4,6 @@
   background-position: center center;
   overflow: hidden;
 }
-.testimonial__container {
-  padding: 7rem 0;
-}
 .testimonial__content .testimonial__heading {
   margin-bottom: 1.5rem;
   font-size: 4.5rem;
