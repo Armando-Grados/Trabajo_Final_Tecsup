@@ -1,18 +1,19 @@
-.section-body{
+.section-body {
   //padding-top: var(--padding-section);
   padding-top: 100px;
   padding-bottom: var(--padding-section);
   box-sizing: border-box;
   max-width: 1600px;
-  margin:  0 auto;
+  margin: 0 auto;
 
-  &__title{
-      text-align: center;
-      color: #000
+  &__title {
+    text-align: center;
+    color: #000
   }
-  
+
 
 }
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
@@ -20,7 +21,11 @@
   background-clip: border-box;
 
   &--headed {
-    @include d-flex-fd-ai-fc-g(initial, center, space-between, initial);
+    // @include d-flex-fd-ai-fc-g(initial, center, space-between, initial);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    // justify-items: center;
 
     @include desktop {
       gap: 1.5rem;
@@ -31,7 +36,8 @@
     @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
     z-index: 5;
   }
-  &-galeria{
+
+  &-galeria {
     display: flex;
     max-width: var(max-width-container-section);
     margin: 0 auto;
@@ -39,15 +45,16 @@
     padding-right: var(--padding-container);
 
     &--elements {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: var(--padding-section);
-      }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: var(--padding-section);
+    }
+  }
 }
-}
-.contenedor{
+
+.contenedor {
   display: flex;
   position: relative;
   justify-content: center;
@@ -59,10 +66,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: all 0.25s ease-out;
-   cursor: pointer;
+  cursor: pointer;
 }
 
-.contenedor-2{
+.contenedor-2 {
   display: flex;
   position: relative;
   justify-content: center;
@@ -74,10 +81,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: all 0.25s ease-out;
-   cursor: pointer;
+  cursor: pointer;
 }
 
-.contenedor-4{
+.contenedor-4 {
   display: flex;
   position: relative;
   justify-content: center;
@@ -92,7 +99,7 @@
   cursor: pointer;
 }
 
-.contenedor-3{
+.contenedor-3 {
   display: flex;
   position: relative;
   justify-content: center;
@@ -107,7 +114,7 @@
   cursor: pointer;
 }
 
-.contenedor .capa{
+.contenedor .capa {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -117,7 +124,7 @@
   align-content: center;
 }
 
-.contenedor-2 .capa{
+.contenedor-2 .capa {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -127,7 +134,7 @@
   align-content: center;
 }
 
-.contenedor-3 .capa{
+.contenedor-3 .capa {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -137,7 +144,7 @@
   align-content: center;
 }
 
-.contenedor-4 .capa{
+.contenedor-4 .capa {
   display: none;
   flex-direction: column;
   width: 100%;
@@ -147,72 +154,74 @@
   align-content: center;
 }
 
-.contenedor:hover{
-  .capa{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-  }  
+.contenedor:hover {
+  .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
-.contenedor-2:hover{
-  .capa{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-  }  
+.contenedor-2:hover {
+  .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
-.contenedor-3:hover{
-  .capa{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-  }  
+.contenedor-3:hover {
+  .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 
-.contenedor-4:hover{
-  .capa{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-  }  
+.contenedor-4:hover {
+  .capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
-.capa-title{
+
+.capa-title {
   color: azure;
 }
+
 // .img{
 //   width: 355px;
 //   //height: 50px;
 // }
 
 @media (max-width: 768px) {
-  .img{
-      width: 200px;        
-  }  
-
-  .contenedor .capa{
-      display: flex;
+  .img {
+    width: 200px;
   }
 
-  .contenedor-2 .capa{
-      display: flex;
+  .contenedor .capa {
+    display: flex;
   }
 
-  .contenedor-3 .capa{
-      display: flex;
+  .contenedor-2 .capa {
+    display: flex;
   }
 
-  .contenedor-4 .capa{
-      display: flex;
+  .contenedor-3 .capa {
+    display: flex;
   }
 
-  .elements--cards{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+  .contenedor-4 .capa {
+    display: flex;
+  }
+
+  .elements--cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

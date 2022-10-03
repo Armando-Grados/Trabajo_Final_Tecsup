@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --max-width-container: 1200px;
+    --max-width-container: 1500px;
     --padding-section: 1rem 0;
     --padding-card: 1rem;
   }
