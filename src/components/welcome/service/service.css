@@ -1,0 +1,91 @@
+.welcome__service {
+  height: 96vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all linear 0.4s;
+  background-size: cover;
+  align-items: normal;
+}
+.first {
+  /* background: url("../../../assets/welcome/services-1.webp"); */
+  background: url("../../../assets/welcome/4.jpg"); 
+  background-size: cover; 
+  background-position: center center;
+}
+.second {
+  /* background: url("../../../assets/welcome/services-2.webp"); */
+  background: url("../../../assets/welcome/5.jpg");
+  background-size: cover; 
+  background-position: center center;
+}
+.third {
+  /* background: url("../../../assets/welcome/services-3.webp"); */
+  background: url("../../../assets/welcome/6.jpg");
+  background-size: cover; 
+  background-position: center center;
+}
+.fourth {
+  /* background: url("../../../assets/welcome/services-4.webp"); */
+  background: url("../../../assets/welcome/7.jpg");
+  background-size: cover; 
+  background-position: center center;
+}
+.welcome__service-item .box {
+  width: 100%;
+  display: block;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.welcome__service-item .box .content {
+  padding: 40px;
+}
+.welcome__service-item .box .heading {
+  font-family: monumentextended, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000;
+  top: 60%;
+  position: absolute;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+.welcome__service-item .box .pera {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  font-size: 1.15rem;
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+.welcome__service-item .box:hover .pera {
+  visibility: visible;
+  height: auto;
+  position: relative;
+  top: 70px;
+}
+.welcome__service-item .box:hover .heading {
+  top: 25px;
+}
+.welcome__service-item .box:hover {
+  background: #fff;
+  z-index: 1;
+  opacity: 0.7;
+}
+@media screen and (min-width: 960px) {
+  .welcome__service-item .box {
+    width: 24.76%;
+    border: 2px solid #fff;
+    float: left;
+  }
+  .welcome__service-item .box:first-child {
+    border-left: none;
+  }
+  .welcome__service-item .box:last-child {
+    border-right: none;
+  }
+}
+.height__100 {
+  height: 100%;
+}
