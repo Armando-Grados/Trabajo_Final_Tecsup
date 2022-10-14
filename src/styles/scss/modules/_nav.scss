@@ -7,17 +7,50 @@
   --rotate-menu-icon-lastline: rotate(0deg);
   --heigth-menu-hamburger: 0;
   --top-menu-hamburger: 64px;
+  --right-door-l: 100%;
+  --left-door-r: 100%;
+  --menu-visibility: hidden;
+  --menu-display: none;
+  --delay-transition-door: 0.4s;
+  --delay-transition-x: 0s;
+  --scale-separator: scaleX(0);
+  --scale-x: scale(0);
+  --rotate-x: rotate(0deg);
+  --opacity-link: 0;
+  --cero-uno: 0;
+  --left: -2rem;
   padding: 0.625rem 0;
 
+  @include desktop {
+    --scale-separator: scaleY(0);
+  }
+
   &--menu-open {
-    --bg-color-menu-icon-midline: transparent;
-    --bg-color-menu-icon-line: #fff;
-    --fill-color-logo: #fff;
-    --displacement-menu-icon-line: 9;
-    --rotate-menu-icon-firstline: rotate(45deg);
-    --rotate-menu-icon-lastline: rotate(-45deg);
+    // --bg-color-menu-icon-midline: transparent;
+    // --bg-color-menu-icon-line: #fff;
+    // --fill-color-logo: #fff;
+    // --displacement-menu-icon-line: 9;
+    // --rotate-menu-icon-firstline: rotate(45deg);
+    // --rotate-menu-icon-lastline: rotate(-45deg);
     --heigth-menu-hamburger: 100%;
     --top-menu-hamburger: 0;
+    --right-door-l: 50%;
+    --left-door-r: 50%;
+    --menu-visibility: visible;
+    --menu-display: grid;
+    --delay-transition-door: 0s;
+    --delay-transition-x: 0.4s;
+    --scale-separator: scaleX(1);
+    --scale-x: scale(1);
+    --rotate-x: rotate(180deg);
+    --opacity-link: 1;
+    --cero-uno: 1;
+    --left: 1rem;
+
+    @include desktop {
+      --scale-separator: scaleY(1);
+
+    }
   }
 
   &__link-logo-container {
@@ -45,4 +78,5 @@
       transition: fill 0.5s;
     }
   }
+
 }

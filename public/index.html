@@ -11,6 +11,10 @@
 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
   <title>Grupaso</title>
   <style>
     .body {
@@ -18,9 +22,7 @@
       background-color: #EEEEEE;
     }
 
-    /* .root {
-      position: relative;
-    } */
+
 
     .preloader {
       display: flex;
@@ -37,7 +39,7 @@
       position: absolute;
     }
 
-    .left-door {
+    .pload__door-l {
       position: fixed;
       top: 0;
       left: 0;
@@ -47,7 +49,7 @@
 
     }
 
-    .rigth-door {
+    .pload__door-r {
       position: fixed;
       top: 0;
       right: 0;
@@ -61,10 +63,8 @@
 
 <body class="body">
   <section class="preloader">
-    <div class="door">
-      <div class="left-door"></div>
-      <div class="rigth-door"></div>
-    </div>
+    <div class="pload__door-l"></div>
+    <div class="pload__door-r"></div>
     <div class="loader">
       <svg class="icon-loader" width="353" height="260" viewBox="0 0 353 260" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -88,13 +88,18 @@
   <div id="root"></div>
   <script src="./kute.min.js"></script>
   <script>
-    const doorWidth = document.querySelector('.left-door').offsetWidth;
+    const preloader = document.querySelector('.preloader')
+    const doorWidth = document.querySelector('.pload__door-l').offsetWidth;
     const easing = 'easingBackIn';
     const duration = 500;
     const repeat = 4;
 
-    const animar4_1 = KUTE.to('.left-door', { translate: - doorWidth });
-    const animar4_2 = KUTE.to('.rigth-door', { translate: doorWidth });
+    const animar4_1 = KUTE.to(
+      '.pload__door-l',
+      { translate: - doorWidth },
+      { duration: 400, easing: 'easingSinusoidalOut', onComplete: () => { preloader.style.display = 'none' } });
+
+    const animar4_2 = KUTE.to('.pload__door-r', { translate: doorWidth }, { duration: 400, easing: 'easingSinusoidalOut' });
 
     const animar3_1 = KUTE.to('.loader', { opacity: 0 }, { duration: 400, delay: 500, easing: 'linear', onComplete: () => { animar4_1.start(); animar4_2.start() } });
 

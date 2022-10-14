@@ -1,50 +1,94 @@
 import { ReactComponent as IconMenu } from '../../assets/svg/menu-ball.svg';
+import { ReactComponent as IconMenuClose } from '../../assets/svg/menu-ball-x.svg';
+import { ReactComponent as Wolf } from '../../assets/svg/just-wolf.svg';
+import { Link } from 'react-router-dom';
 
 const MenuHamburger = () => {
+  const menuItems = [
+    {
+      texto: 'Inicio',
+      delay: { '--delay': '0.0s' }
+    },
+    {
+      texto: 'Season',
+      delay: { '--delay': '0.1s' }
+    },
+    {
+      texto: 'Novedades',
+      delay: { '--delay': '0.2s' }
+    },
+    {
+      texto: 'Reseñas',
+      delay: { '--delay': '0.3s' }
+    },
+    {
+      texto: 'Tienda',
+      delay: { '--delay': '0.4s' }
+    },
 
-  const nav = document.querySelector('.nav')
-  const header = document.querySelector('.header');
+  ]
 
-  const menuHamburger = () => {
-    console.log(nav);
-    nav.classList.toggle('nav--menu-open');
-    header.classList.add('bg-black');
+  const menuHamburgerOpen = () => {
+    const nav = document.querySelector('.nav');
+    nav.classList.add('nav--menu-open');
   };
-
-  const headerColorMenuOpen = () => {
-    if (!nav.classList.contains('nav--menu-open')) {
-      header.classList.remove('bg-black');
-    }
+  const menuHamburgerClose = () => {
+    const nav = document.querySelector('.nav');
+    nav.classList.remove('nav--menu-open');
   };
   return (
     <>
       <div
         className="menu__icon"
         onClick={() =>
-          menuHamburger()
-        }
-      >
-        <IconMenu />
+          menuHamburgerOpen()}>
+        <IconMenu className='menu__ball-svg' />
       </div>
-      <ul
-        className="menu menu--hamburger"
-        onTransitionEnd={() => {
-          headerColorMenuOpen();
-        }}
-      >
-        <li>
-          <a href="#iSkills" className="menu__link">INICIO</a>
-        </li>
-        <li>
-          <a href="#iExperience" className="menu__link">SEASON</a>
-        </li>
-        <li>
-          <a href="/" className="menu__link">ULTIMOS CALZADOS</a>
-        </li>
-        <li>
-          <a href="#iContact" className="menu__link">RESEÑAS</a>
-        </li>
-      </ul>
+      <div className='menu__door-left'></div>
+      <div className='menu__door-right'></div>
+      <div className='menu menu--hamburger'>
+        <ul
+          className='menu__items'>
+          {
+            menuItems.map((element, index) => {
+              return (<li>
+                <Link
+                  key={index}
+                  href="#iSkills"
+                  className="menu__link"
+                  style={element.delay}>
+                  {element.texto.split('').map((element, index) => {
+                    let letter = element === ' ' ? '&nbsp;' : element;
+                    return (
+                      <div key={index} className='menu__letter-container' style={{ '--delay': `${0.03 * index}s` }}>
+                        <span>{letter}</span>
+                        <span className='menu__letter'>{letter}</span>
+                      </div>
+                    )
+                  })}</Link>
+              </li>)
+            })
+          }
+        </ul>
+        <div className='menu__close-container'>
+          <IconMenuClose
+            className='menu__icon-close'
+            onClick={() => menuHamburgerClose()} />
+        </div>
+        <div className='menu menu--footer' style={{ '--delay': '0.5s' }}>
+          <Wolf className='menu__icon-wolf' />
+          <div>
+            <h3 className='menu__title'>Equipo de Venta</h3>
+            <h4 className='menu__subtitle'>Richar Osorio - 925326596</h4>
+            <h4 className='menu__subtitle'>Armando - 925326596</h4>
+            <h4 className='menu__subtitle'>Rudy Mendoza - 925326514</h4>
+          </div>
+          <div>
+            <h4 className='menu__subtitle'>Jr. Miró Quesada N.º 179‑185</h4>
+            <h4 className='menu__subtitle'>Lima - Perú</h4>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

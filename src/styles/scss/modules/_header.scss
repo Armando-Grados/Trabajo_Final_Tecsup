@@ -7,14 +7,14 @@
   background-color: var(--reverse-primary-theme-color);
   transition: background-color 0.25s;
 
-  &::after {
-    content: '';
-    height: 0px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    box-shadow: 0 0 0.125rem 0.0125rem var(--reverse-primary-shadow-color);
-    box-shadow: 0 0 0.125rem 0.0125rem #fff, 0 0 0.125rem 0.0125rem #fff, 0 0 0.125rem 0.0125rem #fff;
-    ;
-  }
+  // &::after {
+  //   content: '';
+  //   height: 0px;
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0;
+  //   box-shadow: 0 0 0.125rem 0.0125rem var(--reverse-primary-shadow-color);
+  //   box-shadow: 0 0 0.125rem 0.0125rem #fff, 0 0 0.125rem 0.0125rem #fff, 0 0 0.125rem 0.0125rem #fff;
+  //   ;
+  // }
 }
