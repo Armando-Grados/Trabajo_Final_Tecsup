@@ -1,9 +1,49 @@
 import React from "react";
+import { useState,useEffect } from "react";
 // import './HomeProducto.scss';
-// import ImagenCardView1 from '../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre';
+//import ImagenCardView1 from '../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre';
+//import ImagenCardView1 from '../';
+//import records from '../../json/producto1.json'
+import axios from "axios";
 
 const HomeZapatillas = () => {
-  // const [selectedCardView1, setSelectedCardView1] = useState(ImagenCardView1[0]);
+  //URL BASE PRINCIPAL
+  const URL_BASE = 'https://localhost:44356/api/';
+
+  //URL POR ID SERVICIO EN BASE DE DATOS
+  const CONTROLLER_PROD1 = 'producto/1';
+
+  // URL LISTADO MODELOS POR PRODUCTO 
+  //const URL_BASE = 'http://4.228.185.92:8080/api/';
+  const CONTROLLER = 'producto/getbyall/1/1';
+
+  //useEffect
+  const [ prod1, setProd1 ] = useState([]);
+
+  useEffect(()=>{
+    const obtenerProd1 = async ()=>{
+      const url = URL_BASE + CONTROLLER_PROD1;
+      const result = await axios.get(url);
+      setProd1(result.data)
+    }
+    console.log(prod1);
+
+    obtenerProd1()
+  },[]);
+
+
+
+  const [ mini_prod1, setMiniProd1 ] = useState([]);
+
+  useEffect(()=>{
+    const obtenerListaProd1 = async ()=>{
+      const url = URL_BASE + CONTROLLER;
+      const result = await axios.get(url);
+      setMiniProd1(result.data)
+    }
+    obtenerListaProd1()
+  },[]);
+
   return(
     <section className="section-body">
       <div className="section-body__title">
@@ -13,16 +53,17 @@ const HomeZapatillas = () => {
         <div className="container-galeria elements elements--cards">
           <div className="cards">
             <img src={require("../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre/nike-mens-phantom-gt2-elite-fg-grey-blackened-blue.webp")} alt="" id="card_principal"/>
-            {/* <img src={selectedCardView1} alt="" id="card_principal"/> */}
             <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
-            <div className="cards card-view">
-              <img src={require("../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre/nike-mens-phantom-gt2-elite-fg-black-blue-front.webp")} alt="" className="card-view__img"/>
-              <img src={require("../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre/nike-mens-phantom-gt2-elite-fg-navy-white-front.webp")} alt="" className="card-view__img"/>
-              <img src={require("../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre/nike-mens-phantom-gt2-elite-fg-white-bright-crimson-front.webp")} alt="" className="card-view__img"/>
-              <img src={require("../../assets/catalogo/Nike_Phantom_GT2_Elite_FG_Hombre/nike-mens-phantom-gt2-elite-fg-grey-blackened-blue.webp")} alt="" className="card-view__img card-view__img--active"/>
-              {/* { ImagenCardView1.map((img, index)=>(
-                <img key={index} src={img} alt="img"/>
-              ))} */}  
+            <div className ="cards card-view">
+            {
+                mini_prod1.map(prod=>{
+                  return(
+                    <div key={prod.idproducto}>
+                      <img src={prod.Ruta_Imagen} className={prod.Clase}/>
+                    </div>
+                    )
+                })
+            }
             </div>
             <button className="button button--secondary button--card">Agregar al Carrito</button>
             <button className="button button--primary button--card">Vista</button>

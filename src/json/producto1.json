@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "nombre":"1",
+        "ruta": "https://i.postimg.cc/yY26H9WM/nike-mens-phantom-gt2-elite-fg-black-blue-front.webp"    ,
+        "ruta2": "./"    
+    },
+    {
+        "id":2,
+        "nombre":"2",
+        "ruta": "https://i.postimg.cc/3JjhP65v/nike-mens-phantom-gt2-elite-fg-navy-white-front.webp"    
+    },
+    {
+        "id":3,
+        "nombre":"3",
+        "ruta": "https://i.postimg.cc/DyhkdgJy/nike-mens-phantom-gt2-elite-fg-white-bright-crimson-front.webp"    
+    },
+    {
+        "id":4,
+        "nombre":"4",
+        "ruta": "https://i.postimg.cc/5t6ZNKGp/nike-mens-phantom-gt2-elite-fg-grey-blackened-blue.webp"    
+    }
+]
