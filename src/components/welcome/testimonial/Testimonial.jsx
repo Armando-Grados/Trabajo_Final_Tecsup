@@ -10,7 +10,10 @@ import "swiper/css/navigation";
 import "./testimonial.css";
 
 import Fade from "react-reveal/Fade";
-import img from "../../../assets/welcome/aboutimg.webp";
+// import img from "../../../assets/welcome/aboutimg.webp";
+// import img from "../../../assets/welcome/3.png";
+import img from "../../../assets/welcome/2.webp";
+
 
 const Testimonial = () => {
   return (
@@ -21,7 +24,7 @@ const Testimonial = () => {
             <div className="testimonial__content-box">
               <Fade left>
                 <div className="left col">
-                  <img src={img} alt="" />
+                  <img src={img}  alt="" />
                 </div>
               </Fade>
               <Fade right>

@@ -8,16 +8,28 @@
   align-items: normal;
 }
 .first {
-  background: url("../../../assets/welcome/services-1.webp");
+  /* background: url("../../../assets/welcome/services-1.webp"); */
+  background: url("../../../assets/welcome/4.jpg"); 
+  background-size: cover; 
+  background-position: center center;
 }
 .second {
-  background: url("../../../assets/welcome/services-2.webp");
+  /* background: url("../../../assets/welcome/services-2.webp"); */
+  background: url("../../../assets/welcome/5.jpg");
+  background-size: cover; 
+  background-position: center center;
 }
 .third {
-  background: url("../../../assets/welcome/services-3.webp");
+  /* background: url("../../../assets/welcome/services-3.webp"); */
+  background: url("../../../assets/welcome/6.jpg");
+  background-size: cover; 
+  background-position: center center;
 }
 .fourth {
-  background: url("../../../assets/welcome/services-4.webp");
+  /* background: url("../../../assets/welcome/services-4.webp"); */
+  background: url("../../../assets/welcome/7.jpg");
+  background-size: cover; 
+  background-position: center center;
 }
 .welcome__service-item .box {
   width: 100%;

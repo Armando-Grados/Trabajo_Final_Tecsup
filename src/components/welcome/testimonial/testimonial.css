@@ -1,5 +1,6 @@
 .welcome__testimonial {
-  background: url("../../../assets/welcome/bg-personal-testimonials.png");
+  background: url("../../../assets/welcome/bg-personal-testimonials.png");  
+  /* background: url("../../../assets/welcome/2.jpg");   */
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;
@@ -29,6 +30,8 @@
 }
 .testimonial__content-box .col img {
   width: 100%;
+  height: clamp(454.27px , 90vw , 632.67px);  
+  object-fit: cover;
 }
 @media (min-width: 960px) {
   .testimonial__content-box > .col {

@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination  } from 'swiper';
 import { EffectCoverflow } from 'swiper';
-import star from '../../assets/svg/star.svg';
-const HomeCommends = ( ) => {
+import star from '../../../assets/svg/star.svg';
+const HomeCommends2 = ( ) => {
   return (
     <section  >
       <Swiper
+          loop={true}
         modules={[Pagination, EffectCoverflow ]}
         effect="coverflow"
         grabCursor="true"
@@ -13,14 +14,19 @@ const HomeCommends = ( ) => {
         slidesPerView='auto' 
         spaceBetween={30}
         // slidesPerView={2}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1.19,
-          slideShadows: true
-        }}
-    
+        // coverflowEffect={{
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1.19,
+        //   slideShadows: true
+        // }}
+
+        // breakpoints={{
+        //   1024: {
+        //     slidesPerView: 2,
+        //   },
+        // }}
         pagination={{ clickable: true }}
         style={{
           width: "100%", 
@@ -279,4 +285,4 @@ const HomeCommends = ( ) => {
   );
 };
 
-export default HomeCommends;
+export default HomeCommends2;

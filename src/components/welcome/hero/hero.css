@@ -6,7 +6,8 @@
 
 .hero__section {
   height: 100vh;
-  background: url("../../../assets/welcome/bannerimg.webp");
+  /* background: url("../../../assets/welcome/bannerimg.webp"); */
+  background: url("../../../assets/welcome/1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   overflow: hidden;

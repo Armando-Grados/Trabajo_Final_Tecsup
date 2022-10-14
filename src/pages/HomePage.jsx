@@ -9,7 +9,7 @@ const HomePage = () => {
       <HomeHero />
       {/* <HomeStyleClothing /> */}
       {/* <HomeLastestSneakers /> */}
-      <HomeCommends />
+      <HomeCommends style={{maxHeight: '53rem'}} />
     </>
   );
 }
