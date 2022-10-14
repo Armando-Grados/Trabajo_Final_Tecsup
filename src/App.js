@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from "react";
-import { Route, Routes, Navigate , useNavigate } from "react-router-dom";
+import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import PrimaryLayout from './layouts/PrimaryLayout';
 import HomePage from './pages/HomePage';
 import WelcomePge from "./pages/WelcomePge";
@@ -14,13 +14,10 @@ function App() {
   return (
     // loader ? (
     <Routes>
-      <Route path='/store' element={<PrimaryLayout />}>
-        <Route index element={<HomePage />} />
-        <Route></Route>
-        <Route></Route>
-      </Route>
-      <Route path="/">
+      <Route path='/' element={<PrimaryLayout />}>
         <Route index element={<WelcomePge />} />
+        <Route></Route>
+        <Route></Route>
       </Route>
     </Routes>
     // )
