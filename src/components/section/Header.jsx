@@ -1,6 +1,5 @@
-import MenuHamburger from "../menu/MenuHamburger";
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
-
+import MenuHamburger from "../Menu/MenuHamburger";
 const Header = () => {
 
 
