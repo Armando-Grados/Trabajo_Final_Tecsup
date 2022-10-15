@@ -1,6 +1,5 @@
 import './App.css';
-import { useEffect } from "react";
-import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import PrimaryLayout from './layouts/PrimaryLayout';
 import HomePage from './pages/HomePage';
 import WelcomePge from "./pages/WelcomePge";
@@ -16,6 +15,7 @@ function App() {
     <Routes>
       <Route path='/' element={<PrimaryLayout />}>
         <Route index element={<WelcomePge />} />
+        <Route path='store' element={<HomePage />} />
         <Route></Route>
         <Route></Route>
       </Route>
