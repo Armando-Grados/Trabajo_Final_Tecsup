@@ -7,23 +7,33 @@ const MenuHamburger = () => {
   const menuItems = [
     {
       texto: 'Inicio',
-      delay: { '--delay': '0.0s' }
+      delay: { '--delay': '0.0s' },
+      ref: '#hero'
     },
     {
-      texto: 'Season',
-      delay: { '--delay': '0.1s' }
+      texto: 'Testimonios',
+      delay: { '--delay': '0.1s' },
+      ref: '#testimonial'
     },
     {
-      texto: 'Novedades',
-      delay: { '--delay': '0.2s' }
+      texto: 'Servicios',
+      delay: { '--delay': '0.2s' },
+      ref: '#service'
     },
     {
       texto: 'Reseñas',
-      delay: { '--delay': '0.3s' }
+      delay: { '--delay': '0.3s' },
+      ref: '#commends'
+    },
+    {
+      texto: 'Productos',
+      delay: { '--delay': '0.4s' },
+      ref: '/product'
     },
     {
       texto: 'Tienda',
-      delay: { '--delay': '0.4s' }
+      delay: { '--delay': '0.4s' },
+      ref: '/store'
     },
 
   ]
@@ -54,9 +64,10 @@ const MenuHamburger = () => {
               return (
                 <li key={index}>
                   <Link
-                    href="#iSkills"
+                    to={element.ref}
                     className="menu__link"
-                    style={element.delay}>
+                    style={element.delay}
+                    onClick={menuHamburgerClose}>
                     {element.texto.split('').map((element, index) => {
                       let letter = element === ' ' ? '&nbsp;' : element;
                       return (

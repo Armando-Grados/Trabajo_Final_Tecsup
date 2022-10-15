@@ -16,16 +16,16 @@ const WelcomePge = () => {
         render={(comp) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section">
+              <div id="hero" className="section">
                 <Hero />
               </div>
-              <div className="section">
+              <div id='testimonial' className="section">
                 <Testomonial />
               </div>
-              <div className="section">
+              <div id="service" className="section">
                 <Service />
               </div>
-              <div className="section" >
+              <div id="commends" className="section" >
               <HomeCommends2 />
               </div>
               <div className="section bg-black">

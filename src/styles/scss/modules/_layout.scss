@@ -13,6 +13,10 @@
 
 }
 
+.section {
+  height: 100vh;
+}
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
@@ -66,6 +70,12 @@
       padding-right: 5rem;
     }
   }
+  
+  &--product {
+    @include d-flex-fd-ai-fc-g(row, center, center, 1rem);
+    height: 100%;
+  }
+
 }
 
 .container-galeria{
@@ -102,8 +112,6 @@
   display: flex;
   gap: 2rem;
 }
-
-
 
 .contenedor {
   display: flex;

@@ -1,0 +1,27 @@
+.product {
+  &__img {
+    display: block;
+    border: none;
+    width: 500px;
+    height: 390px;
+    background-image: url("../../../assets/img/prueba/img-white-600.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("../../../assets/img/prueba/img-white-1200.webp");
+      background-size: initial;
+    }
+  }
+
+  &__description {
+    @include d-flex-fd-ai-fc-g(column, initial, initial, 1rem);
+    max-width: 600px;
+  }
+
+  &__menu {
+    @include d-flex-fd-ai-fc-g(column, initial, initial, 1rem);
+    margin: 0;
+    padding: 0;
+  }
+}
