@@ -1,6 +1,5 @@
 import React from "react";
 import "./service.css";
-import Fade from "react-reveal/Fade";
 
 const Service = () => {
   const mouseEnteredOne = (e) => {
@@ -33,7 +32,6 @@ const Service = () => {
       <div className="welcome__service first zoom">
         <div className=" height__100">
           <div className="row height__100">
-            <Fade right>
               <div className={` welcome__service-item height__100`}>
                 <div
                   className="box box__item-1 height__100"
@@ -112,7 +110,6 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-            </Fade>
           </div>
         </div>
       </div>
