@@ -9,7 +9,7 @@
     position: fixed;
     width: 100vw;
     height: 50vh;
-    background-color: #262626;
+    background-color: var(--secondary-theme-color);
 
     @include desktop {
       width: 50vw;
@@ -86,7 +86,7 @@
       left: 0;
       width: 100vw;
       height: 4px;
-      background-color: #fff;
+      background-color: var(--primary-theme-color);
       transform: var(--scale-separator);
       transition: transform 0.4s var(--delay-transition-x) ease-in;
 
@@ -100,7 +100,7 @@
   }
 
   &__icon-close {
-    background-color: #262626;
+    background-color: var(--secondary-theme-color);
     z-index: 0;
     transform: var(--scale-x) var(--rotate-x);
     transition: transform 0.5s var(--delay-transition-x) ease-in, scale 0.2s ease;
@@ -122,6 +122,11 @@
       @include d-flex-fd-ai-fc-g(column, initial, initial, 2rem);
     }
 
+    &--footer {
+      @include d-flex-fd-ai-fc-g(column, initial, initial, 0.3rem);
+
+      // @include desktop {}
+    }
   }
 
   &--footer {
@@ -187,6 +192,17 @@
 
     &:hover>.menu__letter-container {
       transform: translateY(-100%);
+    }
+
+    &--footer {
+      left: 0;
+      opacity: 1;
+      font-size: 0.71rem;
+      font-weight: 400;
+
+      @include desktop {
+        font-size: 1rem;
+      }
     }
   }
 

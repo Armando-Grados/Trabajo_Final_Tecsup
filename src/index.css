@@ -1,8 +1,8 @@
 :root {
   scroll-behavior: smooth;
-  --primary-theme-color: #0f0f0f;
-  --reverse-primary-theme-color: #dfdfdf;
-  --secondary-theme-color: #282c34;
+  --primary-theme-color: #fff;
+  --secondary-theme-color: #262626;
+  --reverse-primary-theme-color: #000;
   --tertiary-theme-color: #999999;
   --primary-text-color: #fff;
   --secondary-text-color: #eee;
@@ -34,7 +34,7 @@
 }
 
 .body {
-  background-color: #fff;
+  background-color: var(--primary-theme-color);
   /* background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, rgba(85, 88, 218, 1) 0%, rgba(95, 209, 249, 1) 100.2%); */
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
