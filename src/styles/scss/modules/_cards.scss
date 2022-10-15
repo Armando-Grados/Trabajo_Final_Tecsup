@@ -24,15 +24,25 @@
     }
 
     &.card-view-item2{
-        display: block;
-        position: relative;
+        // display: block;
+        // position: relative;
+        // margin: 10px 0 10px 0.5px;
+        // padding: 15px 0;
+        // text-align: left;
+        // justify-content: center;
+        // align-items: center;
+        // justify-content: space-between;
+        // width: 100%;
         margin: 10px 0 10px 0.5px;
         padding: 15px 0;
-        text-align: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
         justify-content: center;
         align-items: center;
-        justify-content: space-between;
+        //justify-content: space-between;
         width: 100%;
+ 
     }
 
     &.card-view-item3{
@@ -72,14 +82,23 @@
     }
 
     &.card-view-item6{
-        display: block;
-        position: relative;
+        // display: block;
+        // position: relative;
+        // margin: 10px 0 10px 0.5px;
+        // padding: 15px 0;
+        // text-align: left;
+        // justify-content: center;
+        // align-items: center;
+        // justify-content: space-between;
+        // width: 100%;
         margin: 10px 0 10px 0.5px;
         padding: 15px 0;
-        text-align: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
         justify-content: center;
         align-items: center;
-        justify-content: space-between;
+        //justify-content: space-between;
         width: 100%;
     }
 

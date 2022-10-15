@@ -225,6 +225,12 @@
   //height: 50px;
 }
 
+.description{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .img{
       width: 200px;        
