@@ -1,5 +1,6 @@
 import MenuHamburger from "../menu/MenuHamburger";
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -8,11 +9,11 @@ const Header = () => {
     <header className="header">
       <nav className="nav">
         <div className="container container--headed">
-          <a href="/" className="nav__link-logo-container">
+          <Link to="/" className="nav__link-logo-container">
             <figure className="nav__link-logo" height="65" width="84">
               <Logo />
             </figure>
-          </a>
+          </Link>
           <MenuHamburger />
         </div>
       </nav>
