@@ -247,7 +247,6 @@ const HomeZapatillas = () => {
     obtenerListaProd10()
   },[]);
 
-
   return(
     <section className="section-body">
       <div className="section-body__title">
@@ -257,7 +256,7 @@ const HomeZapatillas = () => {
         <div className="container-galeria elements elements--cards">
           <div className="cards">
             <img src={prod1.Ruta_Imagen_Grande} alt="" id="card_principal"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod1.Nombre}</a>
             <div className ="cards card-view">
             {
                 mini_prod1.map(prod=>{
@@ -274,7 +273,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod2.Ruta_Imagen_Grande} alt="" id="card_principal-2"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod2.Nombre}</a>
             <div className="cards card-view-item2">
             {
               mini_prod2.map(prod=>{
@@ -291,7 +290,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod3.Ruta_Imagen_Grande} alt="" id="card_principal-3"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod3.Nombre}</a>
             <div className="cards card-view-item3">
             {
                 mini_prod3.map(prod=>{
@@ -308,7 +307,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod4.Ruta_Imagen_Grande} alt="" id="card_principal-4"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod4.Nombre}</a>
             <div className="cards card-view-item4">
               {
                 mini_prod4.map(prod=>{
@@ -325,7 +324,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod5.Ruta_Imagen_Grande} alt="" id="card_principal-5"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod5.Nombre}</a>
             <div className="cards card-view-item5">
             {
                 mini_prod5.map(prod=>{
@@ -342,7 +341,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod6.Ruta_Imagen_Grande} alt="" id="card_principal-6"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod6.Nombre}</a>
             <div className="cards card-view-item6">
             {
                 mini_prod6.map(prod=>{
@@ -359,7 +358,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod7.Ruta_Imagen_Grande} alt="" id="card_principal-7"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod7.Nombre}</a>
             <div className="cards card-view-item7">
             {
                 mini_prod7.map(prod=>{
@@ -376,7 +375,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod8.Ruta_Imagen_Grande} alt="" id="card_principal-8"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod8.Nombre}</a>
             <div className="cards card-view-item8">
             {
                 mini_prod8.map(prod=>{
@@ -393,7 +392,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod9.Ruta_Imagen_Grande} alt="" id="card_principal-9"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod9.Nombre}</a>
             <div className="cards card-view-item9">
             {
                 mini_prod9.map(prod=>{
@@ -410,7 +409,7 @@ const HomeZapatillas = () => {
           </div>
           <div className="cards">
             <img src={prod10.Ruta_Imagen_Grande} alt="" id="card_principal-10"/>
-            <a href="/">Nike Phantom GT2 Elite FG Hombre<br/>Gris/Azul Ennegrecido<br/> USD 250</a>
+            <a href="/">{prod10.Nombre}</a>
             <div className="cards card-view-item10">
             {
                 mini_prod10.map(prod=>{

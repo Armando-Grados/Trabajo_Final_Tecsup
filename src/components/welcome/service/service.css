@@ -6,6 +6,7 @@
   transition: all linear 0.4s;
   background-size: cover;
   align-items: normal;
+  color: #000;
 }
 .first {
   /* background: url("../../../assets/welcome/services-1.webp"); */
@@ -88,4 +89,13 @@
 }
 .height__100 {
   height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  .content{
+    display: none;
+  }
+  .welcome__service-item{
+    display: none;
+  }
 }

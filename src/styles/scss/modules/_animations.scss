@@ -3,3 +3,13 @@
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes footer {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.3%);
+  }
+}

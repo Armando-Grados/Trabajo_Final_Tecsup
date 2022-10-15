@@ -51,22 +51,22 @@ const MenuHamburger = () => {
           className='menu__items'>
           {
             menuItems.map((element, index) => {
-              return (<li>
-                <Link
-                  key={index}
-                  href="#iSkills"
-                  className="menu__link"
-                  style={element.delay}>
-                  {element.texto.split('').map((element, index) => {
-                    let letter = element === ' ' ? '&nbsp;' : element;
-                    return (
-                      <div key={index} className='menu__letter-container' style={{ '--delay': `${0.03 * index}s` }}>
-                        <span>{letter}</span>
-                        <span className='menu__letter'>{letter}</span>
-                      </div>
-                    )
-                  })}</Link>
-              </li>)
+              return (
+                <li key={index}>
+                  <Link
+                    href="#iSkills"
+                    className="menu__link"
+                    style={element.delay}>
+                    {element.texto.split('').map((element, index) => {
+                      let letter = element === ' ' ? '&nbsp;' : element;
+                      return (
+                        <div key={index} className='menu__letter-container' style={{ '--delay': `${0.03 * index}s` }}>
+                          <span>{letter}</span>
+                          <span className='menu__letter'>{letter}</span>
+                        </div>
+                      )
+                    })}</Link>
+                </li>)
             })
           }
         </ul>

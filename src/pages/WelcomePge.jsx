@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
 // import HomeCommends from "../components/home/HomeCommends";
 import HomeCommends2 from "../components/welcome/review/HomeCommends2";
+import Footer from "../components/section/Footer";
 
 const WelcomePge = () => {
   return (
@@ -26,6 +27,9 @@ const WelcomePge = () => {
               </div>
               <div className="section" >
               <HomeCommends2 />
+              </div>
+              <div className="section bg-black">
+              <Footer />
               </div>
             </ReactFullpage.Wrapper>
           );

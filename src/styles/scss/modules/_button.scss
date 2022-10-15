@@ -36,7 +36,7 @@
   }
 
   &--sl {
-    background-color: #000;
+    background-color: var(--reverse-primary-theme-color);
     border: 0;
     border-radius: 0%;
     color: var(--primary-text-color);
