@@ -15,7 +15,6 @@ const HomePage = () => {
       <HomeSlider/>
       <HomeZapatillas/>
       <HomeCamisetas/>
-      <HomeCommends />
     </>
   );
 }
