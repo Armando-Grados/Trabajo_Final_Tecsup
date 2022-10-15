@@ -38,17 +38,15 @@ const Service = () => {
                   onMouseOver={mouseEnteredOne}
                 >
                   <div className="content contetnt__an">
-                    <h3 className="heading">Residential Roofing</h3>
+                    <h3 className="heading">Misión</h3>
                     <p className="pera">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
+                    
+
+To bring inspiration and innovation to every athlete* in the world. (Ofrecer inspiración e innovación a todos los atletas* del mundo).
+
+* If you have a body, you are an athlete. (Si tienes cuerpo, eres atleta)
+
+Para obtener más información acerca de lo que queremos conseguir con esa misión, visita Acerca de Nike.
                     </p>
                   </div>
                 </div>
@@ -57,17 +55,10 @@ const Service = () => {
                   onMouseOver={mouseEnteredTwo}
                 >
                   <div className="content">
-                    <h3 className="heading">Commercial Roofing</h3>
+                    <h3 className="heading">Vision</h3>
                     <p className="pera">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.{" "}
+                    
+Rudy Bootcamp Tecsup CodiGo: ser los líderes del diseño con un enfoque en obtener lo mejor de los atletas con productos de rendimiento garantizado en el mercado deportivo a nivel mundial.”{" "}
                     </p>
                   </div>
                 </div>
@@ -76,17 +67,10 @@ const Service = () => {
                   onMouseOver={mouseEnteredThree}
                 >
                   <div className="content">
-                    <h3 className="heading">Siding Services</h3>
+                    <h3 className="heading">Enfoque Global</h3>
                     <p className="pera">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.
+                    
+El enfoque global de adidas Runners se construye alrededor de cuatro pilares enfocados en el rendimiento: PREPARACIÓN MENTAL, NUTRICIÓN, MOVIMIENTO Y RECUPERACIÓN. Y para asegurarnos de que todo esto se cumple a la hora de crear una mejor versión de ti mismo, incorporamos un quinto pilar esencial: EL PRODUCTO.
                     </p>
                   </div>
                 </div>
@@ -95,17 +79,9 @@ const Service = () => {
                   onMouseOver={mouseEnteredFour}
                 >
                   <div className="content">
-                    <h3 className="heading">Windows & Doors</h3>
+                    <h3 className="heading">Motivacion</h3>
                     <p className="pera">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book.{" "}
+                    Creemos que cada uno de nuestros corredores obtiene su fuerza gracias a la comunidad que lo rodea: unirte a la comunidad te permite alcanzar el éxito y el crecimiento individual. Guía, apoyo, motivación, inspiración son los factores que impulsan a tu comunidad hacia delante.{" "}
                     </p>
                   </div>
                 </div>

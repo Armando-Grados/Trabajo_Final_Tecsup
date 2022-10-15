@@ -33,62 +33,35 @@ const Testimonial = () => {
                     <SwiperSlide>
                       <div className="testimonial__content">
                         <h4 className="testimonial__heading">
-                          Your Reliable Partner
+                          Tu tiendita de confianza
                         </h4>
                           <p className="content">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries.
                             <br />
-                            <br />
-                            It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and
-                            more recently with desktop publishing software like
-                            Aldus PageMaker including versions of Lorem Ipsum.
+                          Tienda deportiva “Wolf Store” La empresa sport Azuay se dedica a la producción y comercialización de ropa deportiva de alta calidad y gusto para niños y jóvenes de ambos sexos pertenecientes a la Ciudad de Cuenca. La empresa es de tipo unipersonal y sus productos son comercializados con el nombre de marca de la empresa. Hoy se ve que la competencia va creciendo a pasos agigantados y de esta manera puede empezar a plantearse estrategias en cuanto a precio, servicio y entrega del pedido
+                            
                           </p>
+                          <button className="btn btn-primary">Sigan Viendo</button>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__content">
-                        <h4 className="testimonial__heading">Why Hire Us?</h4>
+                        <h4 className="testimonial__heading">Porque elegirnos</h4>
                           <p className="content">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries.
-                            <br />
-                            <br />
-                            It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and
-                            more recently with desktop publishing software like
-                            Aldus PageMaker including versions of Lorem Ipsum.
+                          El calzado deportivo o zapatillas de deporte es un tipo de calzado que se utiliza para realizar distintos tipos de deporte. Generalmente posee un cuerpo fabricado en piel, lona y/o materiales sintéticos, y una suela de gamo que ofrece una mayor adherencia, así como flexibilidad.
+                          <br />
+                          El calzado deportivo recibe diversas denominaciones de acuerdo al país, entre ellas: tenis, zapatillas, zapatos deportivos, zapatillas de deporte, botines, bambas, deportivos o deportivas, zapatos de gamo, playeros o playeras.
                           </p>
-                        <button className="btn btn-primary">Read More</button>
+                        <button className="btn btn-primary">Sigan Viendo</button>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__content">
-                        <h4 className="testimonial__heading">Our Mission</h4>
+                        <h4 className="testimonial__heading">Haz brillar tu escencia</h4>
                           <p className="content">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries.
-                            <br />
-                            <br />
-                            It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and
-                            more recently with desktop publishing software like
-                            Aldus PageMaker including versions of Lorem Ipsum.
+                          La esencia del deporte es aquello que nos hace sentir, sentir que estamos vivos. Lo que te hace seguir día a día.
+                          Muchos de nosotros no firmamos autógrafos, no nos paran para hecerse fotos con nosotros, no nos llaman por la calle… Pero aún así seguimos, no dejamos de entrenar, de trabajar, de luchar por nuestros RETOS, nuestros SUEÑOS!!
                           </p>
-                        <button className="btn btn-primary">Read More</button>
+                        <button className="btn btn-primary">Sigan Viendo</button>
                       </div>
                     </SwiperSlide>
                   </Swiper>

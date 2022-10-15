@@ -10,12 +10,12 @@ const Hero = () => {
               <div className="hero__card">
                 <div className="card__content">
                     <h5 className="card__subheading">
-                      Lorem Ipsum is simply dummy text.{" "}
+                      Tienda de ropa deportiva{" "}
                     </h5>
                     <h3 className="card__heading">
-                      Affordable <br /> Roofing Services
+                      Wolfstore
                     </h3>
-                  <button className="btn btn-primary">Read More</button>
+                  <button className="btn btn-primary">Sigan viendo</button>
                 </div>
               </div>
           </div>
