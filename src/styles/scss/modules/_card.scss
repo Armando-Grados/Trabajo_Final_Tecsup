@@ -1,6 +1,9 @@
 .card {
-  @include d-flex-fd-ai-fc-g(row, center, center, 0);
-  flex-direction: column;
+  @include d-flex-fd-ai-fc-g(column, center, center, 2rem);
+
+  &--product {
+    flex-direction: row;
+  }
 
   &--hero {
     gap: 1.5rem;
@@ -8,8 +11,43 @@
     text-align: center;
   }
 
-  &__title {
+  &__header {
+    width: 100%;
+    @include d-flex-fd-ai-fc-g(row, flex-start, space-between);
+  }
+
+  &__stars {
+    @include d-flex-fd-ai-fc-g(row, center, center, 0.2rem);
+  }
+
+  &__star {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__heart {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__body {
+    @include d-flex-fd-ai-fc-g(column, center, initial, 0.5rem);
+    padding: 2rem 0;
+
+    &--product {
+      align-items: flex-start;
+      padding: 0;
+    }
+  }
+
+  &__title,
+  &__subtitle,
+  &__text {
     margin: 0;
+    color: var(--reverse-primary-text-color);
+  }
+
+  &__title {
     font-size: 1.5rem;
     font-weight: 500;
 
@@ -17,18 +55,52 @@
 
       font-size: 2rem;
     }
-    &--hero{
+
+    &--hero {
       font-size: 2.5rem;
+    }
+
+    &--product {
+      font-size: 1.5rem;
+      font-weight: 600;
     }
   }
 
   &__subtitle {
-    margin: 0;
     font-size: 1.3rem;
     font-weight: 300;
 
     @include desktop {
       font-size: 1.5rem;
+    }
+
+    &--product {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    &--description {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  &__footer {
+    @include d-flex-fd-ai-fc-g(row, initial, flex-start, 0.5rem);
+    width: 100%;
+  }
+
+  &__img {
+    &--type {
+      width: 60px;
+      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+      cursor: pointer;
     }
   }
 }
